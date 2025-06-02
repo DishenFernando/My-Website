@@ -15,8 +15,8 @@ const Hero = () => {
         <p className="typewriter-text">
           <Typewriter
             words={[
-              'Full-Stack Software Engineer',
-              'React | Spring Boot | Flutter',
+              'Software Engineering Intern',
+              'Spring Boot | Java | Flutter',
               'Passionate about Clean Code 💻',
               'Turning Ideas into Digital Realities ✨',
             ]}
