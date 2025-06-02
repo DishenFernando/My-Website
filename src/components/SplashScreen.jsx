@@ -1,5 +1,5 @@
 // src/components/SplashScreen.jsx
-import './SplashScreen.css';
+import './Splashscreen.css';
 import { FaCode } from 'react-icons/fa';
 
 const SplashScreen = () => {
