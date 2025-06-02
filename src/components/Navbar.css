@@ -1,0 +1,137 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  background: #0f172a; /* dark navy */
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Logo Style */
+.navbar-logo {
+  color: #f1f5f9;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo-highlight {
+  color: #3b82f6; /* vibrant blue */
+  font-weight: 800;
+  margin-right: 6px;
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+}
+
+.navbar-logo:hover {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+/* Menu Icon (for mobile) */
+.menu-icon {
+  display: none;
+  font-size: 1.9rem;
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-links {
+  color: #cbd5e1;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-links::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.nav-links:hover::after {
+  width: 100%;
+}
+
+.nav-links:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1e293b;
+    padding: 2rem 0;
+    align-items: center;
+    transform: translateY(-120%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+  }
+
+  .nav-item {
+    margin: 12px 0;
+  }
+}

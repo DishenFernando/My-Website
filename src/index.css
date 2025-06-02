@@ -1,0 +1,41 @@
+/* Reset + Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  padding: 60px 20px;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+:root {
+  --bg: #f9f9f9;
+  --text: #333;
+  --card-bg: #fff;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #f5f5f5;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
