@@ -10,7 +10,7 @@ const Footer = () => {
 
         <div className="social-icons">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/DishenFernando"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
@@ -18,7 +18,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/dishen-fernando-30ab60293"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
@@ -26,7 +26,7 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/dishen__2003?igsh=czRqNnhpYWU0Zmh3&utm_source=qr"
             target="_blank"
             rel="noreferrer"
             aria-label="Instagram"
@@ -34,7 +34,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://facebook.com/yourusername"
+            href="https://www.facebook.com/share/16MgTJD37B/?mibextid=wwXIfr"
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook"
