@@ -98,3 +98,22 @@
     font-size: 0.95rem;
   }
 }
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cta-button.download-btn {
+  background: linear-gradient(135deg, #1f6feb, #3b82f6);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.4);
+  transition: background 0.4s ease, transform 0.2s ease, box-shadow 0.4s ease;
+}
+
+.cta-button.download-btn:hover {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+}

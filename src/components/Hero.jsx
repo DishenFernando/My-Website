@@ -1,7 +1,7 @@
 // src/components/Hero.jsx
 import { Typewriter } from 'react-simple-typewriter';
 import './Hero.css';
-import { FaArrowDown } from 'react-icons/fa';
+import { FaArrowDown, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
   return (
@@ -29,9 +29,18 @@ const Hero = () => {
           />
         </p>
 
-        <a href="#projects" className="cta-button">
-          View My Work <FaArrowDown style={{ marginLeft: '8px' }} />
-        </a>
+        <div className="hero-buttons">
+          <a href="#projects" className="cta-button">
+            View My Work <FaArrowDown style={{ marginLeft: '8px' }} />
+          </a>
+          <a
+            href="/Dishen-Fernando-CV.pdf"
+            download
+            className="cta-button download-btn"
+          >
+            Download CV <FaDownload style={{ marginLeft: '8px' }} />
+          </a>
+        </div>
       </div>
       <div className="hero-shape"></div>
     </section>
